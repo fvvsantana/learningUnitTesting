@@ -190,9 +190,17 @@ public class Controller implements Serializable {
         
         animationTimer = new AnimationTimer() {
             long lastTime = 0;
+            long lastUpdate = 0;
             
             @Override
             public void handle(long now) {
+            	//force the code to update at the maximum speed
+            	// of 120 fps. (1/120 = 0.00833333)
+            	if (now - lastUpdate < 8_333_333L ) {
+            		return;
+            	}
+            	lastUpdate = now;
+            	
                 // update gameTime
                 if (now - lastTime < 1_000000000)
                     gameTime += now - lastTime;
