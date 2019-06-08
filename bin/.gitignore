@@ -4,3 +4,13 @@
 /pacman/
 /utils/
 /view/
+/menu.itens/
+/menu.view.itens/
+/menu.view/
+/model.characters/
+/model.fruits/
+/model.grid/
+/view.characters/
+/view.fruits/
+/view.grid/
+/view.lives/
