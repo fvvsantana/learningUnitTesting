@@ -42,11 +42,16 @@ public class PacManModel extends CharacterModel implements Updatable{
         return lives;
     }
     
+
     public void updateScore (int score){
+    	//increment score
         this.score += score;
+        //increment relative score
         relativeScore += score;
         
+        //when relative score surpass 10000
         if (relativeScore > 10000){
+        	//convert 10000 points into 1 live
             relativeScore -= 10000;
             lives++;
         }
@@ -85,12 +90,17 @@ public class PacManModel extends CharacterModel implements Updatable{
     
     @Override
     public void update() {
-        
+    	//if the counter hits POWER_TIME and the pacman is powerful
         if(powerful && counter == POWER_TIME){
+        	//remove his power
             setPowerful(false);
+            //clear the counter
             counter = 0;
+            //clear the number of ghosts eaten
             ghostCounterEaten = 0;
+        //if it's not ended
         } else if(powerful && counter != POWER_TIME){
+        	//increment the counter
             counter++;
         }
     }
