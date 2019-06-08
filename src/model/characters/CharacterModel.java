@@ -18,7 +18,7 @@ public abstract class CharacterModel implements Serializable {
     private boolean moving;
     
 
-    // multiple constructors
+    // multiple constructoFACTORrs
     public CharacterModel(double realRow, double realCol) {
         this.row = (int) (FACTOR * realRow);
         this.col = (int) (FACTOR * realCol);

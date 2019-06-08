@@ -83,6 +83,14 @@ public class PacManModel extends CharacterModel implements Updatable{
         updateScore(100);
     }
     
+    public int getCounter() {
+    	return this.counter;
+    }
+    
+    public void setCounter(int c) {
+    	this.counter = c;
+    }
+ 
     @Override
     public void update() {
         

@@ -72,6 +72,10 @@ public class GhostModel extends CharacterModel implements Updatable {
         else
             return GhostState.NORMAL;
     }
+    
+    public void setEatable(int t) {
+    	this.eatableTime = t;
+    }
 
     @Override
     public void update() {
