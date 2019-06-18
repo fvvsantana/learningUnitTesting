@@ -1,4 +1,4 @@
-package pactest;
+package test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import model.characters.PacManModel;
 
-class PMUpdateScore {
+class TestPacmanModelUpdateScore {
 
 	@Test
 	void testZero() {

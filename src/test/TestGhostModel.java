@@ -1,4 +1,4 @@
-package pactest;
+package test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -8,7 +8,7 @@ import model.characters.GhostModel;
 import model.characters.PacManModel;
 import utils.GhostState;
 
-class GMgetViewState {
+class TestGhostModel {
 
 	@Test
 	void test1() {

@@ -1,4 +1,4 @@
-package pactest;
+package test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import model.characters.GhostModel;
 import pacman.Controller;
 
-class CDistanceCharacterPoint {
+class TestController {
 	
 	
 	@Test
